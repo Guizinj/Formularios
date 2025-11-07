@@ -3,27 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro</title>
+    <title>Formularios</title>
     <style>
-        body{
-            font-size: 0.9em;
+        h1{
+            font-size: 1.2em;
         }
     </style>
 </head>
 <body>
-    <h1>Teste de Formulário</h1>
-    <form method="post" autocomplete="on" action="cadastro.php">
-    <p> 
-        <label for="iuser">Usuário:</label> <input type="text" name="user" id="iuser" minlength="5" maxlength="20" size="10
-        " placeholder="nome do usuário" autocomplete="username">
-    </p>
-    <p>
-        <label for="isen">Senha:</label> <input type="password" name="Senha" id="isen" required size="8" placeholder="digite a senha" autocomplete="current-password">
-    </p>
-    <p>
-        <input type="submit" value="Enviar">
-        <input type="submit" value="Limpar">
-    </p>
+    <h1>Primeiro Forumálario</h1>
+    <form action="cadastro.php" method="POST" autocomplete="off">
+        <p><label for="inome">Nome:</label> <input type="text" name="Nome" id="inome"></p>
+        <p><label for="iSobrenome">Sobrenome:</label> <input type="text" name="Sobrenome" id="iSobrenome"></p>
+        <p><input type="submit" value="Enviar"></p>
     </form>
 </body>
 </html>
