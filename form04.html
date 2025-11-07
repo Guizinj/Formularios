@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex de Formulário</title>
+    <style>
+        fieldset{
+            background-color: rgba(0, 0, 0, 0.123);
+            border-radius: 10px;
+            box-shadow: 3px 2px 6px black;
+            max-width: 400px;
+        }
+        fieldset > legend{
+           font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="get">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <p>
+            <label for="inome">Nome:</label> <input type="text" name="Nome" id="inome" required size="25">
+            </p>
+            <p>
+            <label for="iemail">Email:</label> <input type="email" name="email" id="iemail" required autocomplete="on">
+            </p>
+            <p>
+            <label for="itel">Telefone:</label> <input type="tel" name="telefone" id="itel" autocomplete="tel" required size="10" placeholder="(xx)xxxxx-xxx" pattern="^\(\d{2}\)\d{5}-\d{4}$">
+            </p>
+        </fildset>
+        <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+        </p>
+     </form>
+</body>
+</html>
