@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formluário</title>
+    <style>
+        h1{
+            font-size: 1.2em;
+            text-align: center;
+        }
+        fieldset{
+            background-color: rgba(199, 198, 198, 0.308);
+            max-width: 400px;
+            border-radius: 20px;
+            box-shadow: 1.5px 2.5px 8px black;
+            margin: 35px auto;
+        }
+        p{
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulário</h1>
+    <fieldset>
+        <form action="cadastro.php" method="get" autocomplete="no">
+            <p>
+                <label for="inome">Nome:</label> <input type="text" name="nome" id="inome" required>
+            </p>
+            <p>
+                <label for="iid">Idade:</label> <input type="number" name="idade" id="iid" min="18" max="65" required value="18">
+            <p>
+                <label for="iescola">Escolaridade:</label> <input type="text" name="Escolaridade" id="iescola" required>
+            </p>
+            <p>
+                <label for="iprof">Profissão:</label> <input type="text" name="Profissão" id="iprof" required>
+            </p>
+            <p>
+                <label for="lstcid">Cidade:</label> <input type="text" name="cidade" id="icid" required list="lstcid">
+                <datalist id="lstcid">
+                    <option>Caruaru</option>
+                    <option>Garanhuns</option>
+                    <option>Recife</option>
+                    <option>Gravatá</option>
+                    <option>Cortês</option>
+                </datalist>
+            </p>
+            <p>
+                <label for="itel">Telefone:</label> <input type="tel" name="telefone" id="itel" placeholder="xx-xxxxx-xxxx" required>
+            </p>
+        
+            <p>
+                <label for="isonho">Mensagem:</label> <br>
+                <textarea name="sonho" id="isonho" cols="30" rows="10" placeholder="Digite aqui sua mensagem..."></textarea>
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </form>
+    </fieldset>
+</body>
+</html>
